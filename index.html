@@ -57,13 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="skills.html">Skills</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
+                        <a href="portfolio.html">Projects</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -151,12 +145,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             document.addEventListener('DOMContentLoaded', function (event) {
 
                 var dataText = [
-                    "That's me: Saif Lakhani",
+                    "That's me: Saif",
                     "I am an IoT Architect",
-                    "I love Formula One",
                     "I develop solutions for high-velocity data",
                     "I have a Google certification in Android development",
-                    "I love Sidney Sheldon",
+                    "I love Formula One & Sidney Sheldon",
                     "Give me an iced tea, and a RomCom"
                 ];
 
@@ -182,8 +175,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 }
                 // start a typewriter animation for a text in the dataText array
                 function StartTextAnimation(i) {
-                    console.log(i);
-                    if (i == 7) {
+                    //console.log(i);
+                    if (i == 6) {
                         StartTextAnimation(0);
                     }
                     // check if dataText[i] exists
