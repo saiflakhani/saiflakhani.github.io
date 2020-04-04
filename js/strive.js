@@ -10,9 +10,9 @@ $(document).ready(function () {
         speed: "600",
         activeBtn: "menu-open"
     });
+    
 
     //contact budget
-
     $(document).on('input change', '#budget', function() {
         $('.budget-text').html( $(this).val() );
     });
