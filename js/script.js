@@ -1,12 +1,5 @@
-jQuery.noConflict();
-window.onload = function() {
-	Particles.init({
-	  selector: '.background'
-	});
-  };
+//jQuery.noConflict();
 jQuery(document).ready(function ($) {
-
-
 	function lightboxPhoto() {
 
 		jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
