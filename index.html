@@ -22,6 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             window.scrollTo(0, 1);
         }
     </script>
+    
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
@@ -39,6 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
 <body>
+    
     <!-- header -->
     <header>
         <!--nav -->
@@ -71,55 +73,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!-- logo -->
         <div class="logo_wthree">
             <a href="index.html">
-                <i class="fab fa-node-js"></i>
+                <img class="fab" width="50px" height="50px" src="./images/star-wars-2.png"></img>
             </a>
         </div>
         <!-- //logo -->
     </header>
     <!-- //header -->
     <!-- banner -->
-    
-    <section class="slide-wrapper">
-        <!-- banner slide -->
-        <div class="agile_banner bg1">
-            <div class="layer">
-                <div class="container">
-                    <div class="banner_text_wthree">
-                        <div class="d-flex">
-                            <h1>Saif</h1>
-                            <h2>&nbsp;Lakhani</h2>
+    <div id="particles-js">
+
+        <section class="slide-wrapper">
+            <!-- banner slide -->
+            <div class="agile_banner bg1">
+                <div class="layer">
+                    <div class="container">
+                        <div class="banner_text_wthree">
+                            <div class="d-flex">
+                                <h1>Saif</h1>
+                                <h2>&nbsp;Lakhani</h2>
+                            </div>
+                            <div id="text" class="banner_text_w3ls my-md-5 my-3"></div>
                         </div>
 
 
-                        <div id="text" class="banner_text_w3ls my-md-5 my-3"></div><br/><br/><br/><br/>
-                        <div style="position: relative; align-items: center" >
-                        <nav class="menu text-center">
-                            <input checked="checked" class="menu-toggler" id="menu-toggler" type="checkbox"></input>
-                            <label for="menu-toggler"></label>
-                            <ul>
-                                <li class="menu-item">
-                                    <a class="fa fa-facebook" href="https://www.facebook.com/" target="_blank"></a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="fa fa-google" href="https://www.google.com/" target="_blank"></a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="fa fa-dribbble" href="https://dribbble.com/" target="_blank"></a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="fa fa-codepen" href="https://codepen.io/" target="_blank"></a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="fa fa-linkedin" href="https://www.linkedin.com/" target="_blank"></a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="fa fa-github" href="https://github.com/" target="_blank"></a>
-                                </li>
-                            </ul>
+
+                    </div>
+                    <br /><br><br><br><br>
+                    <div class="container" style="position: absolute;">
+                        <nav class="menu">
+                            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                            <label class="menu-open-button" for="menu-open">
+                                <span class="lines line-1"></span>
+                                <span class="lines line-2"></span>
+                                <span class="lines line-3"></span>
+                            </label>
+
+                            <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+                            <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+                            <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+                            <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+                            <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+                            <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
                         </nav>
-                        </div>
-                        </div>
-                        <br/><br/><br/>
+                    </div><br /><br><br><br><br><br><br>
+                    <div class="container" style="position:relative;">
                         <ul class="list-inline bnr_list_w3">
                             <li class="list-inline-item">
                                 <a class="btn  text-white  scroll" href="portfolio.html">view my work </a>
@@ -131,10 +128,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <br><br>
-    
     <!-- //banner-->
     <!-- footer -->
     <footer>
@@ -150,6 +146,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- //js -->
     <!-- few java snippets-->
     <script src="js/strive.js"></script>
+    
+    
+
     <!-- banner text animation -->
     <script>
         //text effect
@@ -217,6 +216,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="js/SmoothScroll.min.js "></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
+    <canvas class="background"></canvas>
+    <script src="js/particles.js"></script>
 </body>
 
 </html>
