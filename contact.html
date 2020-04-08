@@ -142,9 +142,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             $.ajax({
                 type: "POST",
                 url: url,
-                xhrFields: {
-                    withCredentials: true
-                },
                 data: jsonToSend, // serializes the form's elements.
                 success: function (data) {
                     alert(data); // show response from the php script.
