@@ -137,16 +137,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             var jsonToSend = {};
             jsonToSend['name'] = $('#personName').val();
             jsonToSend['email'] = $('#personEmail').val();
-            jsonToSend['text'] = $('t1').val();
+            jsonToSend['text'] = $('#t1').val();
             var url = 'https://stark-beyond-90412.herokuapp.com/knockknock/';
             $.ajax({
                 type: "POST",
                 url: url,
                 data: jsonToSend, // serializes the form's elements.
                 success: function (data) {
-                    alert(
-                        "Thanks! I'll get back to you ASAP!"
-                    ); // show response from the php script.
+                    alert("Thanks! I'll get back to you ASAP!"); // show response from the php script.
                 }
             });
 
