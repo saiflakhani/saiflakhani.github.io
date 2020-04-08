@@ -22,6 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             window.scrollTo(0, 1);
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
@@ -144,10 +145,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 url: url,
                 data: jsonToSend, // serializes the form's elements.
                 success: function (data) {
-                    alert("Thanks! I'll get back to you ASAP!"); // show response from the php script.
+                    //alert("Thanks! I'll get back to you ASAP!"); // show response from the php script.
+                    console.log(data);
+                    window.replace('index.html');
                 }
             });
-
+            Swal.fire({
+                    title: 'Thank You!',
+                    html: '<p style="color:black;">I\'ll get back to you ASAP!</p>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
 
         });
     </script>
