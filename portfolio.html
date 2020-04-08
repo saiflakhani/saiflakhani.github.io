@@ -22,6 +22,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             window.scrollTo(0, 1);
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
@@ -30,21 +31,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- gallery css -->
     <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
     <!-- font-awesome icons -->
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- <link href="css/fontawesome-all.min.css" rel="stylesheet"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- //Custom Theme files -->
     <!-- online-fonts -->
-    <link href="//fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="//fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <!-- //online-fonts -->
 </head>
 <style>
-    p{
+    p {
         color: whitesmoke;
     }
-    li{
+
+    li {
         padding: 10px;
     }
 </style>
+
 <body>
     <!-- inner banner -->
     <div class="inner-banner-agile banner-port">
@@ -110,95 +116,111 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </li>
                     </ul>
                     <ul class="portfolio-area clearfix">
-                        <li class="portfolio-item2" data-id="id-0" data-type="cat-item-1">
+                        <li class="portfolio-item2" data-id="0" data-type="cat-item-1" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                
-                                <a href="https://github.com/saiflakhani/MPark">
+                                <a>
+                                    <!-- <a href="https://github.com/saiflakhani/MPark"> -->
                                     <img src="images/m-park.jpg" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
                             <br>
-                            <p>Allows for Gate In / Gate Out of a mall with a gateway system, at the simple click of a button.</p>
+                            <p style="text-align: center">M-PARK</p>
                         </li>
-                        <li  class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+                        <li class="portfolio-item2" data-id="1" data-type="cat-item-2" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://github.com/saiflakhani/gecko">
+                                <a>
+                                    <!-- <a href="https://github.com/saiflakhani/gecko"> -->
                                     <img src="images/gecko.png" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
                             <br>
-                            <p>It sounds like a lizard, but in reality, GECKO helps you with your driving.</p>
+                            <p style="text-align: center">G.E.C.K.O</p>
                         </li>
-                        <li class="portfolio-item2" data-id="id-2" data-type="cat-item-4">
+                        <li class="portfolio-item2" data-id="2" data-type="cat-item-4" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://github.com/saiflakhani/FloatJot">
+                                <!-- <a href="https://github.com/saiflakhani/FloatJot"> --><a>
                                     <img src="images/floatjot.jpg" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>FloatJot is the future of social networking.</p>
-                            
+                            <br>
+                            <p style="text-align: center">FloatJot</p>
                         </li>
-                        <li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
+                        <li class="portfolio-item2" data-id="3" data-type="cat-item-4" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://github.com/saiflakhani/ARea-Travelogue">
+                                <a>
+                                    <!-- <a href="https://github.com/saiflakhani/ARea-Travelogue"> -->
                                     <img src="images/area.png" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>This application applies Augmented Reality (AR) to help users explore areas they are unfamiliar with.</p>
-                            
+                            <br>
+                            <p style="text-align: center">ARea</p>
+
                         </li>
-                        <li class="portfolio-item2" data-id="id-4" data-type="cat-item-2">
+                        <li class="portfolio-item2" data-id="4" data-type="cat-item-2" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://github.com/saiflakhani/Sigma-Tracking">
+                                <a>
+                                    <!-- <a href="https://github.com/saiflakhani/Sigma-Tracking"> -->
                                     <img src="images/sigma.png" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>Tracking Bins across the Sigma Shop Floor. Kalman Filtering and Fingerprinting (RandomForests)</p>
-                            
+                            <br>
+                            <p style="text-align: center">Sigma Electric</p>
+
                         </li>
-                        <li class="portfolio-item2" data-id="id-5" data-type="cat-item-3">
+                        <li class="portfolio-item2" data-id="5" data-type="cat-item-3" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://github.com/5abarinath/ACL17">
+                                <a>
+                                    <!-- <a href="https://github.com/5abarinath/ACL17"> -->
                                     <img src="images/ACLlogo.jpg" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>An auction software made for the bidding of players in an annual cricket tournament called Ace Cricket League.</p>
-                            
+                            <br>
+                            <p style="text-align: center">Ace Cricket League</p>
+
                         </li>
-                        <li class="portfolio-item2" data-id="id-6" data-type="cat-item-3">
+                        <li class="portfolio-item2" data-id="6" data-type="cat-item-3" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="http://freighttiger.quicsolv.com">
+                                <a>
+                                    <!-- <a href="http://freighttiger.quicsolv.com"> -->
                                     <img src="images/ft.jpg" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>[PRIVATE] This is the entire backend for the HUL FreightTigers implementation.</p>
-                            
+                            <br>
+                            <p style="text-align: center">Freight Tiger</p>
+
                         </li>
-                        <li class="portfolio-item2" data-id="id-7" data-type="cat-item-4">
+                        <li class="portfolio-item2" data-id="7" data-type="cat-item-4" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://play.google.com/store/apps/details?id=com.quicsolv.CamJam">
+                                <!-- <a href="https://play.google.com/store/apps/details?id=com.quicsolv.CamJam"> -->
+                                <a>
                                     <img src="images/camjam.jpg" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>CamJam: [PRIVATE] Disables camera while in enterprise premises. This app was developed owing to many enterprise visitors not adhering to rules while in premises.
-                                     </p>
-                            
+                            <br>
+                            <p style="text-align: center">CamJam</p>
+
                         </li>
-                        <li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+                        <li class="portfolio-item2" data-id="8" data-type="cat-item-1" onclick="showModal(this)">
                             <span class="image-block img-hover">
-                                <a href="https://play.google.com/store/apps/details?id=com.quicsolv.rcitynew">
+                                <a>
+                                    <!-- <a href="https://play.google.com/store/apps/details?id=com.quicsolv.rcitynew"> -->
                                     <img src="images/rcity.jpg" class="img-fluid w3layouts agileits" alt="Communal">
                                 </a>
                             </span>
-                                <br>
-                                <p>R City Mall App: [PRIVATE] The entire BLE navigation implementation of the R City Mall</p>
-                            
+                            <br>
+                            <p style="text-align: center">R City Mall</p>
+
+                        </li>
+                        <li class="portfolio-item2" data-id="9" data-type="cat-item-1" onclick="showModal(this)">
+                            <span class="image-block img-hover">
+                                <a>
+                                    <!-- <a href="https://play.google.com/store/apps/details?id=com.quicsolv.rcitynew"> -->
+                                    <img src="images/mahindra.png" class="img-fluid w3layouts agileits" alt="Communal">
+                                </a>
+                            </span>
+                            <br>
+                            <p style="text-align: center">Mahindra Limited</p>
+
                         </li>
                     </ul>
                     <!--end portfolio-area -->
@@ -228,12 +250,186 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- smooth scroll -->
     <script src="js/SmoothScroll.min.js "></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
     <!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
-    
+
     <script src="js/jquery.quicksand.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/2.5.1/bootbox.min.js"></script>
+    <script>
+        function showModal(elem) {
+            var dataId = $(elem).data("id");
+            switch (Number(dataId)) {
+                case 0: Swal.fire({
+                    title: 'M-Park',
+                    html: '<p style="color:black;">Allows for Gate In / Gate Out of a mall with a gateway system, at the simple click of a button. No more bending out of car windows to grab tickets at gates.</p>\
+                    <br><b>My Role: </b>Design and development of the backend architecture, proof of concept, and security TOTP algorithm\
+                    <br><br><b>Challenges: </b>Bluetooth connections took a long time, up to 6 seconds. To skip this protocol, Firebase FCM notifications were sent to minimize delay at the cost of doubtful internet connection in parking premises.\
+                    <br><br><b>Github Link: </b><i class="fa fa-github"></i>  <a href="https://github.com/saiflakhani/MPark">MPark</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                case 1: Swal.fire({
+                    title: 'G.E.C.K.O',
+                    html: '<p style="color:black;">It sounds like a lizard, but in reality, GECKO helps you with your driving. It analyses driver patterns and computes comfort scores, driver rating and theft probability</p>\
+                    <br><b>My Role: </b>Ideation and development of the RandomForest Algorithm (Ensemble based) that classifies drivers according to their style, as well as realtime communication (per second) of the phone OBD via Socket.IO\
+                    <br><br><b>Challenges: </b>Time Based Ensemble Classifiers were extremely unreliable. To fix this, a Kalman Filter was applied to the Acceleration data, to smoothen the curve and omit outliers, at the cost of 10% accuracy.\
+                    <br><br><b>Github Link: </b><i class="fa fa-github"></i>  <a href="https://github.com/saiflakhani/gecko">G.E.C.K.O</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                case 2: Swal.fire({
+                    title: 'FloatJot',
+                    html: '<p style="color:black;">FloatJot is the future of social networking. Traditionally your online posts and status updates are either visible to everyone or is private. \
+                        FloatJot aims to make posts location based, meaning that only those who are within a certain distance of your post will be able to see it. Furthermore, access to these posts is via Augmented Reality, \
+                        thus connecting people on a much more personal level.</p>\
+                    <br><b>My Role: </b>Developed as part of a hackathon, this two member project was my first attempt at Augmented Reality. It was a success, with winning 1200 USD as a cash prize.\
+                    <br><br><b>Challenges: </b>Augmented reality, at the time, had no ready libraries, and therefore projection of the image on top of the Camera Activity, was extremely tedious.\
+                    <br><br><b>Github Link: </b><i class="fa fa-github"></i>  <a href="https://github.com/saiflakhani/FloatJot">FloatJot</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                case 3: Swal.fire({
+                    title: 'ARea',
+                    html: '<p style="color:black;">This application applies Augmented Reality (AR) to help users explore areas they are unfamiliar with. It provides additional visual aids about points of interests around users thus giving them more awareness about their surroundings.</p>\
+                    <br><b>My Role: </b>Developed as part of the TomTom India hackathon, my role was to develop the section of the tour guides. It allows an Uber-based model of tour guides.\
+                    <br><br><b>Challenges: </b>Projecting the AR image when the Azimuth Angle lies within range of the location.\
+                    <br><br><b>Github Link: </b><i class="fa fa-github"></i>  <a href="https://github.com/saiflakhani/ARea-Travelogue">ARea</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                case 4: Swal.fire({
+                    title: 'Sigma Electric',
+                    html: '<p style="color:black;">This application applies RSSI Based Fingerprinting to track manufacturing across the Sigma Shop Floor</p>\
+                    <br><b>My Role: </b>My first lead project, this application involved me developing the RSSI based fingerprinting for every location in the shop floor\
+                    The project failed, miserably, but it was an eight month long stint of learning about ensemble based classification\
+                    <br><br><b>Challenges: </b>Quite frankly, every step of the way, RSSI signals are simply too variable for even simple classifiers. Nothing works.\
+                    <br><br><b>Github Link: </b><i class="fa fa-github"></i>  <a href="https://github.com/saiflakhani/Sigma-Tracking">Sigma Tracking</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                case 5: Swal.fire({
+                    title: 'Ace Cricket League',
+                    html: '<p style="color:black;">An auction software made for the bidding of players in an annual cricket tournament called Ace Cricket League.</p>\
+                    <br><b>My Role: </b>Development and design of part of the socket IO implementation that communicates between client bidders and the game master\
+                    <br><br><b>Challenges: </b>The timeline was short, and of the three iterations of usage of this software, only two were successful. Still, this is one of my most successful freelance projects\
+                    <br><br><b>Github Link: </b><i class="fa fa-github"></i>  <a href="https://github.com/saiflakhani/ACL17">ACL</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                    case 6 : Swal.fire({
+                    title: 'Freight Tiger',
+                    html: '<p style="color:black;">A child company of Hindustan Unilever Limited, this project tracks real-time, where each goods truck is docked, loading or unloading.</p>\
+                    <br><b>My Role: </b>Development and design of part of the backend that gathers data from MQTT (IoT sensors) and uses that high velocity data, to dock or undock a truck on the dashboard.\
+                    <br><br><b>Challenges: </b>The Proof of Concept was unstable, and had issues handling the frequency with which trucks were getting docked or undocked, thereby crashing the application<br>\
+                    A fix, by using the immense capabilities of the pandas library, came to the rescue, and the implementation was later stress tested to 200 trucks without any hiccups.\
+                    <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="freighttiger.quicsolv.com">Freight Tiger</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                    case 7 : Swal.fire({
+                    title: 'CamJam',
+                    html: '<p style="color:black;">This app was developed owing to many enterprise visitors not adhering to rules while in premises. It disables the camera until a password is entered or a BLE device is encountered, and disallows the uninstallation of the app, unless the device administration privileges are revoked.</p>\
+                    <br><b>My Role: </b>The complete implementation, android, administration as well as mongo and backend connectivity.\
+                    <br><br><b>Challenges: </b>If administrator privileges are revoked, the camera may be enabled by the user. However, as a precaution, when this happens, a POST request is sent, alerting the enterprise that such an incident has taken place. The enterprise can then take appropriate action. This is due to Android limitations.\
+                    <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="https://play.google.com/store/apps/details?id=com.quicsolv.CamJam&hl=en_IN">CamJam</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                    case 8 : Swal.fire({
+                    title: 'R City Mall',
+                    html: '<p style="color:black;">The R City Mall, India\'s first mall to have implemented indoor navigation, and that\'s because of this project</p>\
+                    <br><b>My Role: </b>Part of android implementation as well as backend routing\
+                    <br><br><b>Challenges: </b>You mean apart from climbing up on a ladder 400 times to put up the tracking devices in the mall? <br>Well, routing, even with A* isn\'t as easy as I\'d thought.\
+                    <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="https://play.google.com/store/apps/details?id=com.quicsolv.rcitynew&hl=en_IN">R City Mall</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                    case 9 : Swal.fire({
+                    title: 'Mahindra Limited',
+                    html: '<p style="color:black;">Similar to the Freight Tiger Project, Mahindra had the requirement of tracking their trucks, <br>and making sure that every truck went through specific checkpoints.</p>\
+                    <br><b>My Role: </b>To implement MQTT to server, high-speed, high robustness operations, to faciliate checking if the truck was in the middle, left or right of the checkpoint\
+                    <br><br><b>Challenges: </b>The Mahindra implementation went smoothly, well, except for Mahindra\'s own firewall, which happened to block every port and IP address known to mankind. \
+                    <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="http://mahindra.quicsolv.com/login.php">Mahindra Implementation</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                
+            }
+            console.log("Data ID" + dataId);
+        }
+    </script>
     <!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
 
 </body>
