@@ -147,21 +147,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 success: function (data) {
                     //alert("Thanks! I'll get back to you ASAP!"); // show response from the php script.
                     console.log(data);
-                    window.replace('index.html');
+                    //window.replace('index.html');
                 }
             });
             Swal.fire({
-                    title: 'Thank You!',
-                    html: '<p style="color:black;">I\'ll get back to you ASAP!</p>',
-                    width: 600,
-                    padding: '3em',
-                    backdrop: `
+                title: 'Thank You!',
+                html: '<p style="color:black;">I\'ll get back to you ASAP!</p>',
+                width: 600,
+                padding: '3em',
+                backdrop: `
                                 rgba(0,0,123,0.4)
                                 url("images/nyan-cat.gif")
                                 left top
                                 no-repeat
                             `
-                });
+
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                location.replace('index.html');
+            });
 
         });
     </script>
