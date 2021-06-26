@@ -114,6 +114,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li class="cat-item-4">
                             <a href="#" title="Android">Android</a>
                         </li>
+                        <li class="cat-item-5">
+                            <a href="#" title="Java">Java</a>
+                        </li>
                     </ul>
                     <ul class="portfolio-area clearfix">
                         <li class="portfolio-item2" data-id="0" data-type="cat-item-1" onclick="showModal(this)">
@@ -220,6 +223,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </span>
                             <br>
                             <p style="text-align: center">Mahindra Limited</p>
+
+                        </li>
+                        <li class="portfolio-item2" data-id="10" data-type="cat-item-5" onclick="showModal(this)">
+                            <span class="image-block img-hover">
+                                <a>
+                                    <!-- <a href="https://play.google.com/store/apps/details?id=com.quicsolv.rcitynew"> -->
+                                    <img src="images/remolin.png" class="img-fluid w3layouts agileits" alt="Communal">
+                                </a>
+                            </span>
+                            <br>
+                            <p style="text-align: center">Remolin</p>
+
+                        </li>
+                        <li class="portfolio-item2" data-id="11" data-type="cat-item-2" onclick="showModal(this)">
+                            <span class="image-block img-hover">
+                                <a>
+                                    <!-- <a href="https://play.google.com/store/apps/details?id=com.quicsolv.rcitynew"> -->
+                                    <img src="images/facematch.png" class="img-fluid w3layouts agileits" alt="Communal">
+                                </a>
+                            </span>
+                            <br>
+                            <p style="text-align: center">Facematch</p>
 
                         </li>
                     </ul>
@@ -415,6 +440,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <br><b>My Role: </b>To implement MQTT to server, high-speed, high robustness operations, to faciliate checking if the truck was in the middle, left or right of the checkpoint\
                     <br><br><b>Challenges: </b>The Mahindra implementation went smoothly, well, except for Mahindra\'s own firewall, which happened to block every port and IP address known to mankind. \
                     <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="http://mahindra.quicsolv.com/login.php">Mahindra Implementation</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                    case 10 : Swal.fire({
+                    title: 'Remolin',
+                    html: '<p style="color:black;">Remolin is a video-conferencing application that allows for screen sharing, video-balanced calling, instant messaging, background blurring, and much more. Based on WebRTC, this project is currently being utilized by ICICI Lombard for insurance verification.</p>\
+                    <br><b>My Role: </b>Implementation of the entire project, as well as the recorders over a compute-optimized AWS instance. Further, deployment of licensing algorithms that prevent the unauthorized usage of recorders, and keeping track of time of the call for billing.\
+                    <br><br><b>Challenges: </b>The implementation was mostly core Linux stuff. Recorders were dockerized instances, which required the presence of virtual sound cards, not available on the AWS kernel. Migrating the AWS kernel to a different kernel was extremely taxing.\
+                    <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="https://remolin.com/test">Remolin Website</a>',
+                    width: 600,
+                    padding: '3em',
+                    backdrop: `
+                                rgba(0,0,123,0.4)
+                                url("images/nyan-cat.gif")
+                                left top
+                                no-repeat
+                            `
+                });
+                    break;
+                    case 11 : Swal.fire({
+                    title: 'Facematch',
+                    html: '<p style="color:black;">Facematch is an application that allows facial recognition over two images, and then find the euclidian distance between the given images. Usually, this would require training over many images, but Facematch can do it with one simple image.</p>\
+                    <br><b>My Role: </b>Implementation of the euclidian distance algorithm, with some open source help, deployment and UI. Further, recognition of each facial feature and mapping (drawing) over it.\
+                    <br><br><b>Challenges: Went quite well, until issues cropped up when there were multiple faces in one image. After that, it became impossible. Each face needed to be matched with each different face in the destination image, which made it complicated.</b>\
+                    <br><br><b>Live Link: </b><i class="fa fa-star"></i>  <a href="https://remolin.com:5281">Facematch</a>',
                     width: 600,
                     padding: '3em',
                     backdrop: `
